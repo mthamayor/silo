@@ -1,0 +1,21 @@
+services:
+  app:
+    container_name: silo_app
+    build:
+      context: ./app
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./app/src:/app/src
+    ports: 
+      - "3000:80"
+  backend:
+    container_name: silo_backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./backend/src:/backend/src
+    ports:
+      - "8080:80"
+networks:
+  silo_network:
