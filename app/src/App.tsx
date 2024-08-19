@@ -1,43 +1,26 @@
-import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import LandingPage from "./pages/LandingPage/LandingPage";
-import {
-  ThemeProvider,
-  useThemeColors,
-} from "./providers/ThemeProvider/ThemeProvider";
-import styled, { StyleSheetManager } from "styled-components";
-import { ThemeColors } from "./providers/ThemeProvider/colors";
-import { shouldForwardProp } from "./util/shouldForwardProp";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <LandingPage />,
-  },
-]);
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    <StyleSheetManager shouldForwardProp={shouldForwardProp}>
-      <ThemeProvider>
-        <AppChild>
-          <RouterProvider router={router} />
-        </AppChild>
-      </ThemeProvider>
-    </StyleSheetManager>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.tsx</code> and save to reloads.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
-
-function AppChild({ children }: React.PropsWithChildren) {
-  const themeColors = useThemeColors();
-
-  return <AppWrapper $themeColors={themeColors}>{children}</AppWrapper>;
-}
-
-const AppWrapper = styled.div<{ $themeColors: ThemeColors }>`
-  background-color: ${({ $themeColors }) => $themeColors.BACKGROUND};
-  color: ${({ $themeColors }) => $themeColors.TEXT_SECONDARY};
-  min-height: 100vh;
-`;
 
 export default App;
