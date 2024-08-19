@@ -3,7 +3,7 @@ services:
     container_name: silo_app
     build:
       context: ./app
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile
     volumes:
       - ./app/src:/app/src
     ports: 

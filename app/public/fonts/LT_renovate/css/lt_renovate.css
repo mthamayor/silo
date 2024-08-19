@@ -1,0 +1,93 @@
+/**
+* @license
+*
+* Font Family: Satoshi
+* Designed by: Deni Anggara
+* URL: https://www.fontshare.com/fonts/satoshi
+* © 2024 Indian Type Foundry
+*
+* Satoshi Light 
+* Satoshi LightItalic 
+* Satoshi Regular 
+* Satoshi Italic 
+* Satoshi Medium 
+* Satoshi MediumItalic 
+* Satoshi Bold 
+* Satoshi BoldItalic 
+* Satoshi Black 
+* Satoshi BlackItalic 
+* Satoshi Variable (Variable font)
+* Satoshi VariableItalic (Variable font)
+
+*
+*/
+@font-face {
+  font-family: "LTRenovate";
+  src: url("../fonts/LTRenovate-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LTRenovate";
+  src: url("../fonts/LTRenovate-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "LTRenovate";
+  src: url("../fonts/LTRenovate-MediumBold.otf") format("opentype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LTRenovate";
+  src: url("../fonts/LTRenovate-MediumBoldItalic.otf") format("opentype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "LTRenovate";
+  src: url("../fonts/LTRenovate-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LTRenovate";
+  src: url("../fonts/LTRenovate-SemiBoldItalic.otf") format("opentype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "LTRenovate";
+  src: url("../fonts/LTRenovate-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LTRenovate";
+  src: url("../fonts/LTRenovate-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "LTRenovate";
+  src: url("../fonts/LTRenovate-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LTRenovate";
+  src: url("../fonts/LTRenovate-ExtraBoldItalic.otf") format("opentype");
+  font-weight: 800;
+  font-display: swap;
+  font-style: italic;
+}
